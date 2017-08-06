@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "app.css",
+	"sources": [
+		"../../scss/app.scss"
+	],
+	"sourcesContent": [
+		"$test: #000;\r\n$test1: #888888;\r\n\r\nbody { \r\n  background-color: $test; \r\n  color: $test1;\r\n}"
+	],
+	"names": [],
+	"mappings": "AAGA,AAAA,IAAI,CAAC;EACH,gBAAgB,EAJX,IAAI;EAKT,KAAK,EAJC,OAAO,GAKd"
+}

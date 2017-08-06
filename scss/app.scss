@@ -1,0 +1,232 @@
+//=============== Colors ==================
+
+$bg-color: #000;
+$text-color-light: #dcdddd;
+$text-color-dark: #b0b0b0;
+$white: #fff;
+$dark-color: #101010;
+
+//=============== Fonts ===================
+
+$font-family-text: 'Raleway', sans-serif;
+
+//=============== Mixins ==================
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin padding-box($vertical-padding, $horizontal-padding){
+	padding-top: $vertical-padding;
+	padding-bottom: $vertical-padding;
+	padding-right: $horizontal-padding;
+	padding-left: $horizontal-padding;
+}
+
+@mixin margin-box($vertical-margin, $horizontal-margin){
+	margin-top: $vertical-margin;
+	margin-bottom: $vertical-margin;
+	margin-right: $horizontal-margin;
+	margin-left: $horizontal-margin;
+}
+
+@mixin icon-box{
+	@include border-radius(50%);
+	@include padding-box(18px, 18px);
+	border: 2px solid $white;
+}
+
+//=============== Variables =================
+
+body{ 
+  font-family: $font-family-text !important;
+  background-color: $bg-color !important; 
+}
+
+h2,h3,h4{
+	font-weight: 300 !important;
+	color: $text-color-light !important;
+}
+
+h5{
+	font-weight: 300 !important;
+	color: $text-color-dark !important;
+}
+
+a{
+	outline: 0;
+	text-decoration: none;
+}
+
+//=============== Classes ==================
+
+.page{
+	@include padding-box(45px, 0px);
+}
+
+.page-content{
+	@include padding-box(30px, 0px);
+}
+
+.social{
+	text-align: center;
+	@include margin-box(60px, auto);
+	display: table;
+		.social-items{
+			@include margin-box(60px, auto);
+		}
+		a{
+			@include icon-box;
+			&:hover, &:focus{
+				background-color: $white;
+			}
+			i{
+				color: $text-color-dark;
+			}
+		.fa-facebook{
+			@include padding-box(0px, 3px);
+		}
+	}
+}
+
+.title{
+	h4{
+		vertical-align: -webkit-baseline-middle;
+	}
+	img{
+		@include padding-box(0px, 10px);
+	}
+}
+
+.content-box{
+		@include margin-box(40px, 0px);
+	.content{
+		@include margin-box(40px, 0px); 
+		p{
+			color: $text-color-light;
+		}
+		.tech-items{
+			@include margin-box(30px, 0px); 
+
+		}
+		.companies
+		img{
+			width: 100%;
+		}
+	}
+}
+
+.footer{
+	background-color: $dark-color;
+	color: $text-color-dark;
+	@include padding-box(18px, 0px); 
+	p{
+		vertical-align: -webkit-baseline-middle;
+		@include margin-box(0px, 0px); 
+	}
+}
+
+//=============== Media Queries ==================
+@media(min-width: 1921px){
+	.page{
+		@include padding-box(80px, 0px);
+	}
+}
+
+@media(min-width: 1200px){
+	.companies img{
+			width: 90%;
+	}
+	
+}
+
+@media(max-width: 1200px){
+	.image{
+	 	@include margin-box(0px, auto);
+	}
+	.social{
+		@include margin-box(0px, auto);
+	}
+}
+
+@media (max-width: 992px){
+	.content-box{
+		@include margin-box(60px, 0px);
+	}
+	.companies img{
+		width: 80%;
+	}
+	.tech-items img{
+		width: 70%;
+	}
+}
+
+@media (max-width: 768px){
+	h4{
+		font-size: 1.2rem !important;
+	}
+	p{
+		font-size: 0.9rem !important;
+	}
+	.companies img{
+		width: 90%;
+	}
+	.tech-items img{
+		width: 90%;
+	}
+	.curl img{
+		width: 80%;
+	}
+	.image img{
+		width: 90%;
+	}
+}
+
+@media (max-width: 420px){
+	h2{
+		font-size: 1.6rem !important;
+	}
+	h4{
+		font-size: 1rem !important;
+	}
+	h5{
+		font-size: 0.9rem !important;
+	}
+	p{
+		font-size: 0.7rem !important;
+	}
+	.curl img{
+		@include padding-box(0px, 0px);
+		width: 40%;
+	}
+	.image img{
+		width: 100%;
+	}
+	.companies img{
+		width: 100%;
+	}
+	.tech-items img{
+		width: 100%;
+	}
+	.content p{
+		@include padding-box(0px, 15px);
+	}
+	.social a{
+		@include padding-box(14px, 13px);
+		i{
+			font-size: 1.2222222em;
+		}
+	}
+	
+	.about{
+		margin-top: 0px;
+	}
+}
+
+
+
+
+

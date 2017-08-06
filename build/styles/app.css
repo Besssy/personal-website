@@ -1,0 +1,187 @@
+body {
+  font-family: "Raleway", sans-serif !important;
+  background-color: #000 !important; }
+
+h2, h3, h4 {
+  font-weight: 300 !important;
+  color: #dcdddd !important; }
+
+h5 {
+  font-weight: 300 !important;
+  color: #b0b0b0 !important; }
+
+a {
+  outline: 0;
+  text-decoration: none; }
+
+.page {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-right: 0px;
+  padding-left: 0px; }
+
+.page-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 0px;
+  padding-left: 0px; }
+
+.social {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  display: table; }
+  .social .social-items {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto; }
+  .social a {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 18px;
+    padding-left: 18px;
+    border: 2px solid #fff; }
+    .social a:hover, .social a:focus {
+      background-color: #fff; }
+    .social a i {
+      color: #b0b0b0; }
+    .social a .fa-facebook {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-right: 3px;
+      padding-left: 3px; }
+
+.title h4 {
+  vertical-align: -webkit-baseline-middle; }
+
+.title img {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 10px;
+  padding-left: 10px; }
+
+.content-box {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 0px;
+  margin-left: 0px; }
+  .content-box .content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 0px;
+    margin-left: 0px; }
+    .content-box .content p {
+      color: #dcdddd; }
+    .content-box .content .tech-items {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-right: 0px;
+      margin-left: 0px; }
+    .content-box .content .companies
+img {
+      width: 100%; }
+
+.footer {
+  background-color: #101010;
+  color: #b0b0b0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 0px;
+  padding-left: 0px; }
+  .footer p {
+    vertical-align: -webkit-baseline-middle;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px; }
+
+@media (min-width: 1921px) {
+  .page {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 0px;
+    padding-left: 0px; } }
+
+@media (min-width: 1200px) {
+  .companies img {
+    width: 90%; } }
+
+@media (max-width: 1200px) {
+  .image {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto; }
+  .social {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto; } }
+
+@media (max-width: 992px) {
+  .content-box {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-right: 0px;
+    margin-left: 0px; }
+  .companies img {
+    width: 80%; }
+  .tech-items img {
+    width: 70%; } }
+
+@media (max-width: 768px) {
+  h4 {
+    font-size: 1.2rem !important; }
+  p {
+    font-size: 0.9rem !important; }
+  .companies img {
+    width: 90%; }
+  .tech-items img {
+    width: 90%; }
+  .curl img {
+    width: 80%; }
+  .image img {
+    width: 90%; } }
+
+@media (max-width: 420px) {
+  h2 {
+    font-size: 1.6rem !important; }
+  h4 {
+    font-size: 1rem !important; }
+  h5 {
+    font-size: 0.9rem !important; }
+  p {
+    font-size: 0.7rem !important; }
+  .curl img {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 40%; }
+  .image img {
+    width: 100%; }
+  .companies img {
+    width: 100%; }
+  .tech-items img {
+    width: 100%; }
+  .content p {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .social a {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 13px;
+    padding-left: 13px; }
+    .social a i {
+      font-size: 1.2222222em; }
+  .about {
+    margin-top: 0px; } }
